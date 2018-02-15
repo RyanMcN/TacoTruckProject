@@ -1,0 +1,14 @@
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\bin\Debug\TacoTruckProject.exe.config
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\bin\Debug\TacoTruckProject.exe
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\bin\Debug\TacoTruckProject.pdb
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\MainWindow.g.cs
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\App.g.cs
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\TacoTruckProject_MarkupCompile.cache
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\TacoTruckProject_MarkupCompile.lref
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\MainWindow.baml
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\TacoTruckProject.g.resources
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\TacoTruckProject.Properties.Resources.resources
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\TacoTruckProject.csproj.GenerateResource.Cache
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\TacoTruckProject.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\TacoTruckProject.exe
+C:\Users\Ryan\Source\Repos\TacoTruckProject2\TacoTruckProject\obj\Debug\TacoTruckProject.pdb
