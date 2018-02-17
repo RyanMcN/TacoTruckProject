@@ -5,9 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TacoTruckProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="500" Width="750">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="130,142,0,0" TextWrapping="Wrap" Text="TACO TRUCK" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0" TextWrapping="Wrap" Text="TACO TRUCK" FontSize="20" TextAlignment="Center"  VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,45,0,0" Text="MENU" TextAlignment="Center" FontSize="20" VerticalAlignment="Top" Width="80"/>
 
+        <StackPanel>
+            <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="15,90,0,0"> Choose your Base!</TextBlock>
+            <ComboBox Width="90" FontSize="18" HorizontalAlignment="Left" Margin="15,10,0,0" Name="BasePicker"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="135,90,0,0"> Choose your Protein!</TextBlock>
+            <ComboBox Width="90" FontSize="18" HorizontalAlignment="Left" Margin="135,10,0,0" Name="ProteinPicker"/>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="255,90,0,0"> What's on Top?</TextBlock>
+            <RadioButton HorizontalAlignment="Left" Margin="255,10,0,0" Name="CheeseRadio" >Cheese</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="255,10,0,0" Name="SourCreamRadio" >Sour Cream</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="255,10,0,0" Name="TomatoRadio">Tomatoes</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="255,10,0,0" Name="LettuceRadio">Lettuce</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="255,10,0,0" Name="CilantroRadio">Cilantro</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="255,10,0,0" Name="GuacRadio">Guacamole</RadioButton>
+        </StackPanel>
+        
+        <StackPanel>
+            <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="375,90,0,0"> How about the Side?</TextBlock>
+            <RadioButton HorizontalAlignment="Left" Margin="375,10,0,0" Name="RiceBeansRadio" >Rice and Beans</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="375,10,0,0" Name="ChipSalsaRadio">Chips and Salsa</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="375,10,0,0" Name="ChipQuesoRadio">Chips and Queso</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="375,10,0,0" Name="ChipGuacRadio">Chips and Guacamole</RadioButton>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="540,90,0,0">What to Drink?</TextBlock>
+            <ComboBox Width="90" FontSize="18" HorizontalAlignment="Left" Margin="540,10,0,0" Name="DrinkPicker"/>
+        </StackPanel>
+
+        <StackPanel>
+            <Label HorizontalAlignment="Center" Margin="0,300,0,0" FontSize="18"> Let's Review</Label>
+            <Label HorizontalAlignment="Center" Margin="0,15,0,0" HorizontalContentAlignment="Center" FontSize="12" Width="450" Name="ReviewLabel">default data</Label>
+        </StackPanel>
+        
     </Grid>
 </Window>
