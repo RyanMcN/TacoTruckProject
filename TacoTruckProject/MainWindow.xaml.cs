@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+//using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace TacoTruckProject
 {
@@ -23,6 +25,29 @@ namespace TacoTruckProject
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+            string connStr = "Server=192.168.0.25;Database=tacoTruckInventory;User ID=USER;Password=PASSWORD;";
+
+
+            MySqlConnection mySqlConnection = new MySqlConnection(connStr);
+            
+                try
+                {
+                    mySqlConnection.Open();
+                }
+                catch
+                {
+                    MessageBox.Show("could not connect dude");
+                }
+            
+            mySqlConnection.Close();
+            MessageBox.Show("it worked!");
+
         }
     }
 }
