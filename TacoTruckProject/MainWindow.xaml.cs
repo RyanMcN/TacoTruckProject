@@ -27,27 +27,25 @@ namespace TacoTruckProject
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+     
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
-
             string connStr = "Server=192.168.0.25;Database=tacoTruckInventory;User ID=USER;Password=PASSWORD;";
 
 
             MySqlConnection mySqlConnection = new MySqlConnection(connStr);
-            
-                try
-                {
-                    mySqlConnection.Open();
-                }
-                catch
-                {
-                    MessageBox.Show("could not connect dude");
-                }
-            
+
+            try
+            {
+                mySqlConnection.Open();
+            }
+            catch
+            {
+                MessageBox.Show("could not connect dude");
+            }
+
             mySqlConnection.Close();
             MessageBox.Show("it worked!");
-
         }
     }
 }
