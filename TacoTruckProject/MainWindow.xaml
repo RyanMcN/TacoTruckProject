@@ -12,11 +12,16 @@
 
         <StackPanel>
             <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="15,90,0,0"> Choose your Base!</TextBlock>
-            <ComboBox Width="90" FontSize="18" HorizontalAlignment="Left" Margin="15,10,0,0" Name="BasePicker"/>
+            <RadioButton HorizontalAlignment="Left" Name="FlourTortillaRadio" Margin="15,10,0,0">Flour Tortilla</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Name="WheatTortillaRadio" Margin="15,10,0,0">Wheat Tortilla</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Name="TortillaChipsRadio" Margin="15,10,0,0">Tortilla Chips</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Name="SaladRadio" Margin="15,10,0,0">Salad</RadioButton>
         </StackPanel>
         <StackPanel>
             <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="135,90,0,0"> Choose your Protein!</TextBlock>
-            <ComboBox Width="90" FontSize="18" HorizontalAlignment="Left" Margin="135,10,0,0" Name="ProteinPicker"/>
+            <RadioButton HorizontalAlignment="Left" Name="ChickenRadio" Margin="135,10,0,0">Chicken</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Name="BeefRadio" Margin="135,10,0,0">Beef</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Name="FishRadio" Margin="135,10,0,0">Fish</RadioButton>
         </StackPanel>
 
         <StackPanel>
@@ -39,7 +44,12 @@
 
         <StackPanel>
             <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="540,90,0,0">What to Drink?</TextBlock>
-            <ComboBox Width="90" FontSize="18" HorizontalAlignment="Left" Margin="540,10,0,0" Name="DrinkPicker"/>
+            <RadioButton HorizontalAlignment="Left" Margin="540,10,0,0" Name="CokeRadio" >Coke</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="540,10,0,0" Name="DietCokeRadio">Diet Coke</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="540,10,0,0" Name="SpriteRadio">Sprite</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="540,10,0,0" Name="MrPibbRadio">Mr. Pibb</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="540,10,0,0" Name="SweetTeaRadio">Sweet Tea</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Margin="540,10,0,0" Name="WaterRadio">Water</RadioButton>
         </StackPanel>
 
         <StackPanel>
