@@ -14,6 +14,6 @@ namespace TacoTruckProject
 
         public bool ChipQueso { get; set; }
 
-        public bool ChipsGuac { get; set; }
+        public bool ChipGuac { get; set; }
     }
 }

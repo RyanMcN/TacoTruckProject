@@ -63,6 +63,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DrinkModel.cs" />
+    <Compile Include="MealCreator.cs" />
     <Compile Include="ProteinModel.cs" />
     <Compile Include="SidesModel.cs" />
     <Compile Include="ToppingsModel.cs" />

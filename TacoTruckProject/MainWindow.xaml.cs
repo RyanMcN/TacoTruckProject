@@ -27,7 +27,9 @@ namespace TacoTruckProject
             InitializeComponent();
         }
 
-     
+        MealCreator mealCreator = new MealCreator();
+
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             string connStr = "Server=192.168.0.25;Database=tacoTruckInventory;User ID=USER;Password=PASSWORD;";
@@ -46,6 +48,11 @@ namespace TacoTruckProject
 
             mySqlConnection.Close();
             MessageBox.Show("it worked!");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            OrderButton.Content = "You have ordered an excellent meal! " + mealCreator.CreateMeal();
         }
     }
 }
