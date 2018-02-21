@@ -17,32 +17,36 @@ namespace TacoTruckProject
 
         public string CreateMeal()
         {
-            chooseBase();
+            string order = "";
 
-            chooseProtein();
+            string baseString = chooseBase();
 
-            chooseToppings();
+            string proteinString = chooseProtein();
 
-            chooseSides();
+            string toppingString = chooseToppings();
 
-            chooseDrink();
+            string sideString = chooseSides();
 
-            return "";
+            string drinkString = chooseDrink();
+
+            order = baseString + proteinString + toppingString + sideString + drinkString;
+
+            return order;
         }
 
         private string chooseBase()
         {
             string baseFood;
             if (baseModel.Flour_Tortilla)
-                baseFood = "A base of a Flour Tortilla";
+                baseFood = "A base of a Flour Tortilla ";
             else if (baseModel.Wheat_Tortilla)
-                baseFood = "A base of a Wheat Tortilla";
+                baseFood = "A base of a Wheat Tortilla ";
             else if (baseModel.Chips)
-                baseFood = "A base of Tortilla Chips";
+                baseFood = "A base of Tortilla Chips ";
             else if (baseModel.Salad)
-                baseFood = "A base of Salad";
+                baseFood = "A base of Salad ";
             else
-                baseFood = "Please choose a base";
+                baseFood = "Please choose a base ";
 
             return baseFood;
         }

@@ -8,8 +8,23 @@ namespace TacoTruckProject
 {
     class BaseModel
     {
-        public bool Flour_Tortilla { get; set; }
+        bool _flourTortillaIsChecked;
+        bool _wheatTortillaIsChecked;
+        bool _chipsIsChecked;
+        bool _saladIsChecked;
 
+
+        public bool Flour_Tortilla { get
+            {
+                return _flourTortillaIsChecked;
+            }
+            set
+            {
+                _flourTortillaIsChecked = value;
+            }
+        }
+
+        
         public bool Wheat_Tortilla { get; set; }
 
         public bool Chips { get; set; }

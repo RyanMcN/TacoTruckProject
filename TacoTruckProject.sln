@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TacoTruckProject", "TacoTruckProject\TacoTruckProject.csproj", "{CDBB51AA-2C8F-43E5-890D-265F178814E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TacoTruck", "..\WpfApp1\WpfApp1\WpfApp1\TacoTruck.csproj", "{1E17C884-7FD1-43E2-9813-DCA3279129F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CDBB51AA-2C8F-43E5-890D-265F178814E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CDBB51AA-2C8F-43E5-890D-265F178814E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CDBB51AA-2C8F-43E5-890D-265F178814E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CDBB51AA-2C8F-43E5-890D-265F178814E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E17C884-7FD1-43E2-9813-DCA3279129F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E17C884-7FD1-43E2-9813-DCA3279129F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E17C884-7FD1-43E2-9813-DCA3279129F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E17C884-7FD1-43E2-9813-DCA3279129F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -52,7 +52,7 @@ namespace TacoTruckProject
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            OrderButton.Content = "You have ordered an excellent meal! " + mealCreator.CreateMeal();
+            ReviewLabel.Text = "You have ordered an excellent meal! " + mealCreator.CreateMeal();
         }
     }
 }
