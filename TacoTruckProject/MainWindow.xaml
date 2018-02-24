@@ -5,10 +5,59 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TacoTruckProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="500" Width="750">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="130,142,0,0" TextWrapping="Wrap" Text="TACO TRUCK" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="181,184,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0" TextWrapping="Wrap" Text="TACO TRUCK" FontSize="20" TextAlignment="Center"  VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,45,0,0" Text="MENU" TextAlignment="Center" FontSize="20" VerticalAlignment="Top" Width="80"/>
 
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,15,0,0" Click="Button_Click_1" >Connect</Button>
+        
+        <StackPanel>
+            <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="15,90,0,0"> Choose your Base!</TextBlock>
+            <RadioButton HorizontalAlignment="Left" Name="FlourTortillaRadio" IsChecked="{Binding Path=FlourTortilla, Mode=TwoWay}" Margin="15,10,0,0">Flour Tortilla</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Name="WheatTortillaRadio" IsChecked="{Binding Path=WheatTortilla, Mode=TwoWay}" Margin="15,10,0,0">Wheat Tortilla</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Name="TortillaChipsRadio" IsChecked="{Binding Path=Chips, Mode=TwoWay}" Margin="15,10,0,0">Tortilla Chips</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Name="SaladRadio" IsChecked="{Binding Path=Salad, Mode=TwoWay}" Margin="15,10,0,0">Salad</RadioButton>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="135,90,0,0"> Choose your Protein!</TextBlock>
+            <RadioButton HorizontalAlignment="Left" Name="ChickenRadio" IsChecked="{Binding Path=Chicken, Mode=TwoWay}" Margin="135,10,0,0">Chicken</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Name="BeefRadio" IsChecked="{Binding Path=Beef, Mode=TwoWay}" Margin="135,10,0,0">Beef</RadioButton>
+            <RadioButton HorizontalAlignment="Left" Name="FishRadio" IsChecked="{Binding Path=Fish, Mode=TwoWay}" Margin="135,10,0,0">Fish</RadioButton>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="255,90,0,0"> What's on Top?</TextBlock>
+            <CheckBox HorizontalAlignment="Left" IsChecked="{Binding Path=Cheese, Mode=TwoWay}" Margin="255,10,0,0" Name="CheeseCheck" >Cheese</CheckBox>
+            <CheckBox HorizontalAlignment="Left" IsChecked="{Binding Path=SourCream, Mode=TwoWay}" Margin="255,10,0,0" Name="SourCreamCheck" >Sour Cream</CheckBox>
+            <CheckBox HorizontalAlignment="Left" IsChecked="{Binding Path=Tomato, Mode=TwoWay}" Margin="255,10,0,0" Name="TomatoCheck">Tomatoes</CheckBox>
+            <CheckBox HorizontalAlignment="Left" IsChecked="{Binding Path=Lettuce, Mode=TwoWay}" Margin="255,10,0,0" Name="LettuceCheck">Lettuce</CheckBox>
+            <CheckBox HorizontalAlignment="Left" IsChecked="{Binding Path=Cilantro, Mode=TwoWay}" Margin="255,10,0,0" Name="CilantroCheck">Cilantro</CheckBox>
+            <CheckBox HorizontalAlignment="Left" IsChecked="{Binding Path=Guacamole, Mode=TwoWay}" Margin="255,10,0,0" Name="GuacCheck">Guacamole</CheckBox>
+        </StackPanel>
+        
+        <StackPanel>
+            <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="375,90,0,0"> How about the Side?</TextBlock>
+            <CheckBox HorizontalAlignment="Left" IsChecked="{Binding Path=RiceBeans, Mode=TwoWay}" Margin="375,10,0,0" Name="RiceBeansCheck" >Rice and Beans</CheckBox>
+            <CheckBox HorizontalAlignment="Left" IsChecked="{Binding Path=ChipSalsa, Mode=TwoWay}" Margin="375,10,0,0" Name="ChipSalsaCheck">Chips and Salsa</CheckBox>
+            <CheckBox HorizontalAlignment="Left" IsChecked="{Binding Path=ChipQueso, Mode=TwoWay}" Margin="375,10,0,0" Name="ChipQuesoCheck">Chips and Queso</CheckBox>
+            <CheckBox HorizontalAlignment="Left" IsChecked="{Binding Path=ChipGuac, Mode=TwoWay}" Margin="375,10,0,0" Name="ChipGuacCheck">Chips and Guacamole</CheckBox>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Width="90" TextWrapping="Wrap" FontSize="18" HorizontalAlignment="Left" TextAlignment="Center" Margin="540,90,0,0">What to Drink?</TextBlock>
+            <RadioButton HorizontalAlignment="Left" IsChecked="{Binding DrinkModel.Coke, Mode=TwoWay}" Margin="540,10,0,0" Name="CokeRadio" >Coke</RadioButton>
+            <RadioButton HorizontalAlignment="Left" IsChecked="{Binding DrinkModel.DietCoke, Mode=TwoWay}" Margin="540,10,0,0" Name="DietCokeRadio">Diet Coke</RadioButton>
+            <RadioButton HorizontalAlignment="Left" IsChecked="{Binding DrinkModel.Sprite, Mode=TwoWay}" Margin="540,10,0,0" Name="SpriteRadio">Sprite</RadioButton>
+            <RadioButton HorizontalAlignment="Left" IsChecked="{Binding DrinkModel.MrPibb, Mode=TwoWay}" Margin="540,10,0,0" Name="MrPibbRadio">Mr. Pibb</RadioButton>
+            <RadioButton HorizontalAlignment="Left" IsChecked="{Binding DrinkModel.SeetTea, Mode=TwoWay}" Margin="540,10,0,0" Name="SweetTeaRadio">Sweet Tea</RadioButton>
+            <RadioButton HorizontalAlignment="Left" IsChecked="{Binding DrinkModel.Water, Mode=TwoWay}" Margin="540,10,0,0" Name="WaterRadio">Water</RadioButton>
+        </StackPanel>
+
+        <StackPanel>
+            <Button HorizontalAlignment="Center" Margin="0,300,0,0" Name="OrderButton" FontSize="18" Click="Button_Click">Order</Button>
+            <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0" TextAlignment="Center" FontSize="12" Width="450" Name="ReviewLabel">default data</TextBlock>
+        </StackPanel>
+        
     </Grid>
 </Window>
